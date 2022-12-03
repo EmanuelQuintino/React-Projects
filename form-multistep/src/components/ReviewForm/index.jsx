@@ -42,8 +42,7 @@ const ReviewForm = () => {
                     name="comment"
                     id="comment"
                     placeholder="Conte como foi seu experiência..."
-                    maxLength={320}
-                    required>
+                    maxLength={320}>
                 </textarea>
             </section>
         </article>
