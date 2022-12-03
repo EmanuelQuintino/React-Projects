@@ -34,6 +34,7 @@
 
 .active, .activeSend {
     font-weight: bold;
+    color: #7076f4;
 }
 
 .active > svg {
