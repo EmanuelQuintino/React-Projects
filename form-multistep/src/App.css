@@ -62,11 +62,12 @@ textarea {
 
 .actions button {
   font-size: .9rem;
-  padding: .5rem 1rem;
+  padding: .5rem;
 
   display: flex;
   align-items: center;
-  gap: .5rem;
+  justify-content: center;
+  gap: .2rem;
 
   border: none;
   border-radius: 4px;
@@ -74,6 +75,8 @@ textarea {
 
   cursor: pointer;
   transition: 200ms;
+
+  width: 5.5rem;
 }
 
 .actions button:hover {
