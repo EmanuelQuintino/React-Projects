@@ -7,8 +7,14 @@ import {
 } from "react-icons/bs"
 import './style.css'
 
+const emojiData = {
+    unsatisfied: <BsFillEmojiFrownFill/>,
+    neutral: <BsFillEmojiNeutralFill/>,
+    satisfied: <BsFillEmojiSmileFill/>,
+    very_satisfied: <BsFillEmojiHeartEyesFill/>,
+}
 
-const Thanks = () => {
+const Thanks = ({ data }) => {
     return (
         <article className="thanks-container">
             <section>
@@ -21,12 +27,14 @@ const Thanks = () => {
                 </p>
             </section>
             <section>
-                <h3>Resumo da avaliação</h3>
+                <h3>Resumo da avaliação {data.name}</h3>
                 <p className="review-data">
                     <span>Satisfação com o produto:</span>
+                    {emojiData[data.review]}
                 </p>
                 <p className="review-data">
                     <span>Satisfação com o produto:</span>
+                    {data.comment}
                 </p>
             </section>
         </article>
