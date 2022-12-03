@@ -5,6 +5,7 @@ import { ReviewForm } from './components/ReviewForm'
 import { Thanks } from './components/Thanks'
 import { useForm } from './hooks/useForm'
 import { FiSend} from 'react-icons/fi'
+import { Steps } from './components/Steps'
 
 function App() {
   const formComponents = [<UserForm/>, <ReviewForm/>, <Thanks/>]
@@ -25,7 +26,7 @@ function App() {
 
       <main>
         <div className='form-container'>
-          <p>Etapas</p>
+          <Steps currentStep={currentStep}/>
 
           <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
             <div className='inputs-container'>
