@@ -16,9 +16,7 @@ export const Question = () => {
           <p>Opções</p>
         </section>
 
-        <button>Continuar</button>
+        <button onClick={() => dispatch({type: 'CHANGE_QUESTION'})}>Continuar</button>
     </article>
   )
 }
-
-//48 min
