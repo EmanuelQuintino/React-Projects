@@ -1,0 +1,17 @@
+.options {
+    background-color: #3c0e70;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    opacity: .8;
+    transition: 300ms;
+}
+
+.options:hover {
+    opacity: 1;
+}
+
+#options-container .options p {
+    margin-bottom: 0;
+}
